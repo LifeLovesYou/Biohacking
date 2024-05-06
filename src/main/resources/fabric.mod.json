@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "biohacking",
+	"version": "${version}",
+	"name": "Biohacking",
+	"description": "Allows modification of the body",
+	"authors": [
+		"Sunbeam"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/biohacking/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"sunbeam.biohacking.Biohacking"
+		],
+		"client": [
+			"sunbeam.biohacking.BiohackingClient"
+		],
+		"fabric-datagen": [
+			"sunbeam.biohacking.BiohackingDataGenerator"
+		]
+	},
+	"mixins": [
+		"biohacking.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
